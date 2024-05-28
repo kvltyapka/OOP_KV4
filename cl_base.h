@@ -14,8 +14,8 @@ using namespace std;
 
 class cl_base;
 
-typedef void(cl_base::* TYPE_SIGNAL) (string& msg); // cl_base::* TYPE_SIGNAL - указатель на объект класса cl_base; (string& msg) -  по ссылке
-typedef void (cl_base::* TYPE_HANDLER) (string msg);
+typedef void(cl_base:: * TYPE_SIGNAL) (string& msg); // cl_base::* TYPE_SIGNAL - указатель на объект класса cl_base; (string& msg) -  по ссылке
+typedef void (cl_base::* TYPE_HANDLER)(string msg);
 
 
 struct o_sh // структура, которая организовывает связь
