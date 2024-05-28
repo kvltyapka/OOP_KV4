@@ -1,0 +1,40 @@
+appls_root
+/ object_s1 3
+/ object_s2 2
+/object_s2 object_s4 4
+/ object_s13 5
+/object_s2 object_s6 6
+/object_s1 object_s7 2
+endtree
+/object_s2/object_s4 /object_s2/object_s6
+/object_s2 /object_s1/object_s7
+/ /object_s2/object_s4
+/object_s2/object_s4 /
+end_of_connections
+EMIT /object_s2/object_s4 Send message 1
+EMIT /object_s2/object_s4 Send message 2
+EMIT /object_s2/object_s4 Send message 3
+EMIT /object_s1 Send message 4
+END
+
+
+appls_root
+/ object_s1 3
+/ object_s2 2
+/object_s2 object_s4 4
+/ object_s13 5
+/object_s2 object_s6 6
+/object_s1 object_s7 2
+endtree
+/object_s2/object_s4
+/object_s2/object_s6
+/object_s2
+/object_s1/object_s7 /
+/object_s2/object_s4
+/object_s2/object_s4 /
+end_of_connections
+EMIT /object_s2/object_s4 Send message 1
+EMIT /object_s2/object_s4 Send message 2
+EMIT /object_s2/object_s4 Send message 3
+EMIT /object_s1 Send message 4
+END
